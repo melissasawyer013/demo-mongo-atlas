@@ -7,7 +7,9 @@
 const express = require('express');
 const body_parser = require('body-parser');
 const mongodb = require('mongodb');
-const dotenv = require('dotenv').config();
+// const dotenv = require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 const app = express();
